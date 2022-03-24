@@ -5,13 +5,16 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # we want to test our package on several versions of Python
-        python-version: [3.8, 3.9]
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run linter and pytest
-        run: |
-          make lint
+
+runs-on: ubuntu-latest
+
+steps:
+  - uses: actions/checkout@v2
+  - name: setup-python
+    uses: actions/setup-python@v2
+  - name: install1
+    run:  pip install poetry
+  - name: install2
+    run: make install
+  - name: run-linter
+    run:  make lint
