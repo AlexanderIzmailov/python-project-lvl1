@@ -6,3 +6,5 @@
 [![hexlet-lint](https://github.com/AlexanderIzmailov/python-project-lvl1/actions/workflows/hexlet-lint.yml/badge.svg)](https://github.com/AlexanderIzmailov/python-project-lvl1/actions/workflows/hexlet-lint.yml)
 
 asciinema for brain-even: https://asciinema.org/a/TxXG645IK7sgRiyNFz8dGigvg
+
+asciinema for brain-calc: https://asciinema.org/a/1oJsmjYnsE4nrxzzbuBRolgPf
