@@ -19,3 +19,21 @@ def result(correct, question, name):
     else:
         print("Correct!")
         return True
+
+
+def gcd(x, y):
+    if x > y:
+        bigger = x
+        smaller = y
+    elif y > x:
+        bigger = y
+        smaller = x
+    else:
+        return (x)
+
+    i = 0
+    while i <= smaller - 1:
+        if smaller % (smaller - i) == 0 and bigger % (smaller - i) == 0:
+            return smaller - i
+        i += 1
+    return ("None")
