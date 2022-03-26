@@ -1,4 +1,5 @@
 import prompt
+from random import randint
 
 
 def take_name():
@@ -37,3 +38,26 @@ def gcd(x, y):
             return smaller - i
         i += 1
     return ("None")
+
+
+def progression():
+    amount = randint(5, 15)
+    step = randint(-10, 10)
+    start = randint(-100, 100)
+    hidden_position = randint(1, amount)
+
+    result = ""
+    next_num = start
+    i = 1
+    while i <= amount:
+
+        if i == hidden_position:
+            result += ".. "
+            hidden_num = next_num
+        else:
+            result += str(next_num) + " "
+
+        next_num += step
+        i += 1
+
+    return (result.strip(), hidden_num)
