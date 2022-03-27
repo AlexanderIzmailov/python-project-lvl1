@@ -64,6 +64,9 @@ def progression():
 
 
 def prime(number):
+    if number == 1:
+        return "no"
+
     i = 2
     while i <= number / 2:
         if number % i == 0:
